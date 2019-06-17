@@ -1,5 +1,6 @@
 package org.maven.testng.TestNGProject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ public class LaunchBrowser {
 		System.out.println(url);
 		String title = driver.getTitle();
 		System.out.println(title);
+		driver.findElement(By.id("email")).sendKeys("kalai");
 		driver.quit();
 	}
 
