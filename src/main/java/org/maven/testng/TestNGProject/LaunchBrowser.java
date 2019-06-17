@@ -18,6 +18,7 @@ public class LaunchBrowser {
 		String title = driver.getTitle();
 		System.out.println(title);
 		driver.findElement(By.id("email")).sendKeys("kalai");
+		driver.findElement(By.id("pass")).sendKeys("kalai");
 		driver.quit();
 	}
 
