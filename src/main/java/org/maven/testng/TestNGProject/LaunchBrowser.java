@@ -19,6 +19,7 @@ public class LaunchBrowser {
 		System.out.println(title);
 		driver.findElement(By.id("email")).sendKeys("kalai");
 		driver.findElement(By.id("pass")).sendKeys("kalai");
+		driver.findElement(By.id("loginbutton")).click();
 		driver.quit();
 	}
 
